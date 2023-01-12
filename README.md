@@ -12,3 +12,10 @@
 
 # Day 3 Control flow and logical operators
 # Create project: "Treasure Island"
+
+---------------------------------------------------------------------------------------------
+
+# Day 4 Randomisation and Python List
+# Create project Rock Paper Scissors
+
+---------------------------------------------------------------------------------------------
