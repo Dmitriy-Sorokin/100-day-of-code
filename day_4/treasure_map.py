@@ -13,9 +13,10 @@ position = input(
 hor = int(position[0])
 ver = int(position[1])
 
-selected_row = map[ver - 1]  # Выбираем список куда быдем ложить "X"
-# print(selected_row)
-selected_row[hor - 1] = "X"
+# selected_row = map[ver - 1]  # Выбираем список куда быдем ложить "X"
+# # print(selected_row)
+# selected_row[hor - 1] = "X"
+map[ver - 1][hor - 1] = "X"
 
 # pas = int(position)
 #
