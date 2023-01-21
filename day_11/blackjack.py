@@ -52,7 +52,7 @@ while go_next:
                 print(f"Computer's first card: {comp_first_card[0]}")
             if sum(player_card) > 21:
                 go = False
-            else:
+            elif next_play == "n":
                 go = False
 
         computer()
