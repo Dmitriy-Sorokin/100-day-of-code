@@ -33,12 +33,12 @@ while bol_go:
 
     # Detect R paddle misses
     if ball.xcor() > 380:
-        ball.reset()
+        ball.reset_ball()
         scoreboard.l_point()
 
     # Detect R paddle misses
     if ball.xcor() < -380:
-        ball.reset()
+        ball.reset_ball()
         scoreboard.r_point()
 
 
