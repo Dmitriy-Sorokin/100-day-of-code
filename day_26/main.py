@@ -38,17 +38,69 @@
 #
 # print(result)
 
-with open("file1.txt") as file1:
-    s1 = file1.readlines()
+# with open("file1.txt") as file1:
+#     s1 = file1.readlines()
+#
+# with open("file2.txt") as file2:
+#     s2 = file2.readlines()
+#
+# # Write your code above 👆
+# result = []
+#
+# m = [result.append(int(n)) for n in s1 if n in s2]
+#
+# print(result)
+# import random
+#
+# names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
+# students_score = {studen: random.randint(1, 100) for studen in names}
+# # print(students_score)
+#
+# passed_students = {student: num for student, num in students_score.items() if num > 60}
+# # print(passed_students)
+#
+# sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
+# # Don't change code above 👆
+#
+# # Write your code below:
+# list_sentens = sentence.split()
+#
+# result = {words: len(words) for words in list_sentens}
+#
+# print(result)
 
-with open("file2.txt") as file2:
-    s2 = file2.readlines()
 
-# Write your code above 👆
-result = []
+# weather_c = {
+#     "Monday": 12,
+#     "Tuesday": 14,
+#     "Wednesday": 15,
+#     "Thursday": 14,
+#     "Friday": 21,
+#     "Saturday": 22,
+#     "Sunday": 24,
+# }
+# # 🚨 Don't change code above 👆
+#
+# # Write your code 👇 below:
+#
+# weather_f = {key: (value * 9/5) + 32 for key, value in weather_c.items()}
+#
+# print(weather_f)
 
-m = [result.append(int(n)) for n in s1 if n in s2]
 
-print(result)
+import pandas
 
+student_dict = {
+    "student": ["Angela", "James", "Lily"],
+    "score": [56, 76, 98]
+}
 
+st_data = pandas.DataFrame(student_dict)
+
+# print(st_data)
+
+# for (key, value) in st_data.items():
+#     print(value)
+
+for (index, row) in st_data.iterrows():
+    print(row.score)

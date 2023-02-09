@@ -30,16 +30,12 @@ while len(guessed_states) < 50:
             coor_dict = coor.to_dict()
             for i in coor_dict:
                 if i == "x":
-                    for key in coor_dict[i]:
-                        new_coor_x = coor_dict[i][key]
-                        print(new_coor_x)
+                    new_coor_x = [coor_dict[i][key] for key in coor_dict[i]]
                 elif i == "y":
-                    for key in coor_dict[i]:
-                        new_coor_y = coor_dict[i][key]
-                        print(new_coor_y)
+                    new_coor_y = [coor_dict[i][key] for key in coor_dict[i]]
             state_turtl.hideturtle()
             state_turtl.penup()
-            state_turtl.goto(new_coor_x, new_coor_y)
+            state_turtl.goto(new_coor_x[0], new_coor_y[0])
             state_turtl.write(arg=state, move=False, align=ALIGNMENT, font=FONT)
 
 for item in guessed_states:
