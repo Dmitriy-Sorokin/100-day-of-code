@@ -1,7 +1,8 @@
 from tkinter import *
 
 window = Tk()
-window.minsize(height=200, width=300)
+window.title("Miles to kilometer Converter")
+window.minsize(height=150, width=300)
 
 entry = Entry()
 entry.grid(column=1, row=0)
