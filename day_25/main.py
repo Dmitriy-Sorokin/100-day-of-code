@@ -18,7 +18,7 @@
 
 import pandas
 
-data = pandas.read_csv("weather_data.csv")
+# data = pandas.read_csv("weather_data.csv")
 
 # data_dict = data.to_dict()
 # print(data_dict)
@@ -33,19 +33,19 @@ data = pandas.read_csv("weather_data.csv")
 # print(data.temp)
 # # Get data row
 
-monday = data[data.day == "Monday"]
-t_m = monday.temp
-far = 9/5 * t_m + 32
-print(far)
-print(t_m)
-max_day = data["temp"].max()
-print(data[data.temp == max_day])
+# monday = data[data.day == "Monday"]
+# t_m = monday.temp
+# far = 9/5 * t_m + 32
+# print(far)
+# print(t_m)
+# max_day = data["temp"].max()
+# print(data[data.temp == max_day])
 
 # Crate a dadaframe from scratch
 
 data_dict = {
-    "student": ["Ann", "Ben"],
-    "score": [50, 20]
+    'English': ['the'],
+    'Russian': ['а']
 }
 
 data_d = pandas.DataFrame(data_dict)
