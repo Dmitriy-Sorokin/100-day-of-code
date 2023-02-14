@@ -35,7 +35,7 @@ def generate_password():
 
 
 def save_password():
-    get_web = e_website.get()
+    get_web = e_website.get().lower()
     get_pass = e_password.get()
     get_email = e_email.get()
     new_data = {
@@ -52,19 +52,42 @@ def save_password():
                                                               f"\nPassword: {get_pass} \nIs it ok to save")
 
         if is_ok:
-            with open("data.json", mode="r") as data:
-                # Reading old data
-                r_data = json.load(data)
-                # Update old data
-                r_data.update(new_data)
-            with open("data.json", mode="w") as data:
-                # Saving update data
-                json.dump(r_data, data, indent=4)
+            try:
+                with open("data.json", mode="r") as data:
+                    # Reading old data
+                    r_data = json.load(data)
+                    # Update old data
+                    r_data.update(new_data)
+            except FileNotFoundError:
+                with open("data.json", mode="w") as data:
+                    json.dump(new_data, data, indent=4)
+            else:
+                with open("data.json", mode="w") as data:
+                    # Saving update data
+                    json.dump(r_data, data, indent=4)
+            finally:
+                # json.dump(new_data, data, indent=4)
+                # r_data = json.load(data)
+                e_website.delete(0, END)
+                e_password.delete(0, END)
 
-            # json.dump(new_data, data, indent=4)
-            # r_data = json.load(data)
+
+# ---------------------------- Function search ------------------------------- #
+
+def find_password():
+    get_web = e_website.get().lower()
+    try:
+        with open("data.json", mode="r") as data:
+            read_data = json.load(data)
+            messagebox.showinfo(title=get_web,
+                                message=f"Your email: {read_data[get_web]['email']}\n"
+                                        f"Your password: {read_data[get_web]['password']}")
             e_website.delete(0, END)
-            e_password.delete(0, END)
+    except KeyError:
+        messagebox.showwarning(title="Warning", message=f"No details for {get_web} exists.")
+        e_website.delete(0, END)
+    except FileNotFoundError:
+        messagebox.showwarning(title="Warning", message="No Data File Found")
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -92,8 +115,8 @@ l_password.grid(column=0, row=3)
 
 # Create entry
 
-e_website = Entry(width=52)
-e_website.grid(column=1, row=1, columnspan=2)
+e_website = Entry(width=34)
+e_website.grid(column=1, row=1)
 e_website.focus()
 
 e_email = Entry(width=52)
@@ -110,5 +133,8 @@ b_generate_pass.grid(column=2, row=3)
 
 b_add = Button(text="Add", width=44, command=save_password)
 b_add.grid(column=1, row=4, columnspan=2)
+
+b_search = Button(text="Search", width=14, command=find_password)
+b_search.grid(column=2, row=1)
 
 window.mainloop()
