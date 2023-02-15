@@ -152,6 +152,7 @@
 # Day 32 Send Email
 # Manage Dates (datetime) g_email test.100.day@gmail.com pass 100dayofcode
 # onehandriddayofcode@yahoo.com
+# Create project: Automated Birthday 
 
 ---------------------------------------------------------------------------------------------
 
