@@ -12,6 +12,9 @@ requests = "^2.28.2"
 selenium = "^4.7.2"
 prettytable = "^3.6.0"
 pandas = "^1.5.3"
+pyperclip = "^1.8.2"
+voluptuous = "^0.13.1"
+pytest-voluptuous = "^1.2.0"
 
 
 [build-system]
