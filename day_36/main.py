@@ -1,4 +1,5 @@
 import requests
+
 STOCK = "TESLA"
 COMPANY_NAME = "Tesla Inc"
 API_KEY_TESLA = "UJL1GSJKU7HE24F4"
