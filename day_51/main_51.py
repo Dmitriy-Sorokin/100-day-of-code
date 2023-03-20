@@ -7,8 +7,8 @@ import time
 
 promised_up = 20
 promised_down = 5
-LOGIN = "sorokin.dm@nakukop.com"
-PASS = "Dimon21234qwer"
+LOGIN = "login"
+PASS = "pass"
 
 
 class InternetSpeedTwitterBot:
