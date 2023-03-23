@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 @h_teg
 @u_teg
-# @img_src
+@img_src
 def hello_world():
     return 'Hello, World!'
 

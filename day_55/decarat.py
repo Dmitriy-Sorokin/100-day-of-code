@@ -1,6 +1,6 @@
 def img_src(func):
-    def wrapper():
-        return '<img src="https://media.giphy.com/media/gl8ymnpv4Sqha/giphy.gif">'
+    def wrapper(*args, **kwargs):
+        return f'{func()}<br><img src="https://media.giphy.com/media/gl8ymnpv4Sqha/giphy.gif">'
 
     return wrapper
 
