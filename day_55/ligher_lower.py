@@ -15,7 +15,7 @@ def hello_world():
 @decorator_project_h_l
 @h_teg
 def greet(number: int):
-    random_number =  2 #random.randint(1, 10)
+    random_number = random.randint(1, 10)
     if random_number == number:
         return "You found me!"
     elif number > random_number:
