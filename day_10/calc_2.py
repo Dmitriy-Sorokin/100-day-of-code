@@ -48,7 +48,7 @@ calculation_function = operations[operation_symbol]
 # To fix this bug we need to change the code on line 42 to:
 second_answer = calculation_function(first_answer, num3)
 # In the next lesson, we will delete all the code from line 34-48 so don't worry
-# It won't affect your final project.
+# It won't affect your final day_57_pro.
 # But it's a good oportunity to practice debugging. 🐞
 
 print(f"{first_answer} {operation_symbol} {num3} = {second_answer}")

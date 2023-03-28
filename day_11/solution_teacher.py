@@ -1,9 +1,9 @@
 ############### Blackjack Project #####################
 
-# Difficulty Normal 😎: Use all Hints below to complete the project.
-# Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the project.
-# Difficulty Extra Hard 😭: Only use Hints 1 & 2 to complete the project.
-# Difficulty Expert 🤯: Only use Hint 1 to complete the project.
+# Difficulty Normal 😎: Use all Hints below to complete the day_57_pro.
+# Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the day_57_pro.
+# Difficulty Extra Hard 😭: Only use Hints 1 & 2 to complete the day_57_pro.
+# Difficulty Expert 🤯: Only use Hint 1 to complete the day_57_pro.
 
 ############### Our Blackjack House Rules #####################
 
@@ -20,7 +20,7 @@
 
 # Hint 1: Go to this website and try out the Blackjack game:
 #   https://games.washingtonpost.com/games/blackjack/
-# Then try out the completed Blackjack project here:
+# Then try out the completed Blackjack day_57_pro here:
 #   http://blackjack-final.appbrewery.repl.run
 
 # Hint 2: Read this breakdown of program requirements:
