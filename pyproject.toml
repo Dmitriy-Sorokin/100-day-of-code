@@ -17,6 +17,7 @@ voluptuous = "^0.13.1"
 pytest-voluptuous = "^1.2.0"
 beautifulsoup4 = "^4.11.2"
 webdriver-manager = "^3.8.5"
+Flask = "^2.2.3"
 
 
 [build-system]

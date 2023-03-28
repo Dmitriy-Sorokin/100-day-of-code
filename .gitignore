@@ -111,11 +111,11 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
+# Spyder day_57_pro settings
 .spyderproject
 .spyproject
 
-# Rope project settings
+# Rope day_57_pro settings
 .ropeproject
 
 # mkdocs documentation
