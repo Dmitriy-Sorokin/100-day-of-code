@@ -163,6 +163,17 @@ Flask = ">=0.8"
 visitor = "*"
 
 [[package]]
+name = "Flask-CKEditor"
+version = "0.4.6"
+description = "CKEditor integration for Flask."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = "*"
+
+[[package]]
 name = "Flask-SQLAlchemy"
 version = "3.0.3"
 description = "Add SQLAlchemy support to your Flask application."
@@ -673,7 +684,7 @@ email = ["email-validator"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "21a858b2e8e007150ae2f16d1d1569c27d1d204c3d39c1e8054d0d6b6fec42f2"
+content-hash = "113cdbe8e1317df57309c58a4d28b79025977895d79297af4b8bd77164bfe663"
 
 [metadata.files]
 async_generator = [
@@ -865,6 +876,10 @@ Flask = [
 ]
 Flask-Bootstrap = [
     {file = "Flask-Bootstrap-3.3.7.1.tar.gz", hash = "sha256:cb08ed940183f6343a64e465e83b3a3f13c53e1baabb8d72b5da4545ef123ac8"},
+]
+Flask-CKEditor = [
+    {file = "Flask-CKEditor-0.4.6.tar.gz", hash = "sha256:4b6aa0e831616b86c8c393cb1e5dcae8f62c66c16ef4316071dc7ccf77d4c9a1"},
+    {file = "Flask_CKEditor-0.4.6-py2.py3-none-any.whl", hash = "sha256:aa95bf2fab8d4379fcbe5786310bb4fbae467016ed0149c407101e0e4c278fa8"},
 ]
 Flask-SQLAlchemy = [
     {file = "Flask-SQLAlchemy-3.0.3.tar.gz", hash = "sha256:2764335f3c9d7ebdc9ed6044afaf98aae9fa50d7a074cef55dde307ec95903ec"},
