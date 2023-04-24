@@ -1,3 +1,6 @@
+from day_83.checker import checker_win
+
+
 def board_example():
     print(' 1 | 2 | 3 ')
     print('-----------')
@@ -18,8 +21,22 @@ def print_board(board):
 print("Example board. In lead a number to select a location: ")
 board_example()
 
-choose_user = int(input("On the example board, look at where you want to put the cross and enter that number: "))
+next_step = False
+while not next_step:
+    try:
+        choose_user_1 = int(input("On the example board, look at where you want to put the cross and enter that number player word(X): "))
+    except ValueError:
+        print("Only number example board 1-9")
+        continue
+    print("Games board")
+    board_user[choose_user_1 - 1] = "X"
+    print_board(board=board_user)
+    next_step = checker_win(board=board_user)
+    if next_step:
+        break
+    choose_user_2 = int(input("On the example board, look at where you want to put the cross and enter that number player word(0): "))
+    print("Games board")
+    board_user[choose_user_2 - 1] = "0"
+    print_board(board=board_user)
+    checker_win(board=board_user)
 
-print("Games board")
-board_user[choose_user - 1] = "X"
-print_board(board=board_user)
