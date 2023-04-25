@@ -25,5 +25,3 @@ def checker_win(board):
         return True
     else:
         return False
-
-print(3*3+1)

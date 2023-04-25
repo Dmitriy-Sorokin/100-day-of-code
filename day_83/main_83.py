@@ -34,7 +34,11 @@ while not next_step:
     next_step = checker_win(board=board_user)
     if next_step:
         break
-    choose_user_2 = int(input("On the example board, look at where you want to put the cross and enter that number player word(0): "))
+    try:
+        choose_user_2 = int(input("On the example board, look at where you want to put the cross and enter that number player word(0): "))
+    except ValueError:
+        print("Only number example board 1-9")
+        continue
     print("Games board")
     board_user[choose_user_2 - 1] = "0"
     print_board(board=board_user)
