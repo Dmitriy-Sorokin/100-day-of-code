@@ -163,6 +163,45 @@ Flask = ">=0.8"
 visitor = "*"
 
 [[package]]
+name = "Flask-CKEditor"
+version = "0.4.6"
+description = "CKEditor integration for Flask."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = "*"
+
+[[package]]
+name = "Flask-Gravatar"
+version = "0.5.0"
+description = "Small extension for Flask to make usage of Gravatar service easy."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = ">=0.10"
+
+[package.extras]
+all = ["Sphinx (>=1.4.2)", "Sphinx (>=1.4.2)", "check-manifest (>=0.25)", "check-manifest (>=0.25)", "coverage (>=4.0)", "coverage (>=4.0)", "isort (>=4.2.2)", "isort (>=4.2.2)", "pydocstyle (>=1.0.0)", "pydocstyle (>=1.0.0)", "pytest (>=2.8.0)", "pytest (>=2.8.0)", "pytest-cache (>=1.0)", "pytest-cache (>=1.0)", "pytest-cov (>=1.8.0)", "pytest-cov (>=1.8.0)", "pytest-pep8 (>=1.0.6)", "pytest-pep8 (>=1.0.6)"]
+docs = ["Sphinx (>=1.4.2)"]
+tests = ["check-manifest (>=0.25)", "coverage (>=4.0)", "isort (>=4.2.2)", "pydocstyle (>=1.0.0)", "pytest (>=2.8.0)", "pytest-cache (>=1.0)", "pytest-cov (>=1.8.0)", "pytest-pep8 (>=1.0.6)"]
+
+[[package]]
+name = "Flask-Login"
+version = "0.6.2"
+description = "User authentication and session management for Flask."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+Flask = ">=1.0.4"
+Werkzeug = ">=1.0.1"
+
+[[package]]
 name = "Flask-SQLAlchemy"
 version = "3.0.3"
 description = "Add SQLAlchemy support to your Flask application."
@@ -673,7 +712,7 @@ email = ["email-validator"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "21a858b2e8e007150ae2f16d1d1569c27d1d204c3d39c1e8054d0d6b6fec42f2"
+content-hash = "47d3262befa882a80c43876fff8a968f7f89ceff29d1a204d1c21a419e1c7398"
 
 [metadata.files]
 async_generator = [
@@ -865,6 +904,18 @@ Flask = [
 ]
 Flask-Bootstrap = [
     {file = "Flask-Bootstrap-3.3.7.1.tar.gz", hash = "sha256:cb08ed940183f6343a64e465e83b3a3f13c53e1baabb8d72b5da4545ef123ac8"},
+]
+Flask-CKEditor = [
+    {file = "Flask-CKEditor-0.4.6.tar.gz", hash = "sha256:4b6aa0e831616b86c8c393cb1e5dcae8f62c66c16ef4316071dc7ccf77d4c9a1"},
+    {file = "Flask_CKEditor-0.4.6-py2.py3-none-any.whl", hash = "sha256:aa95bf2fab8d4379fcbe5786310bb4fbae467016ed0149c407101e0e4c278fa8"},
+]
+Flask-Gravatar = [
+    {file = "Flask-Gravatar-0.5.0.tar.gz", hash = "sha256:60665f31c2c612891db68ff801e93ed3a0881c6c8ec346abc64d2a9923f562e1"},
+    {file = "Flask_Gravatar-0.5.0-py2.py3-none-any.whl", hash = "sha256:93be048a58cef92345e7bfc78e918e7f4c729b3a33646510b71948c024e7f591"},
+]
+Flask-Login = [
+    {file = "Flask-Login-0.6.2.tar.gz", hash = "sha256:c0a7baa9fdc448cdd3dd6f0939df72eec5177b2f7abe6cb82fc934d29caac9c3"},
+    {file = "Flask_Login-0.6.2-py3-none-any.whl", hash = "sha256:1ef79843f5eddd0f143c2cd994c1b05ac83c0401dc6234c143495af9a939613f"},
 ]
 Flask-SQLAlchemy = [
     {file = "Flask-SQLAlchemy-3.0.3.tar.gz", hash = "sha256:2764335f3c9d7ebdc9ed6044afaf98aae9fa50d7a074cef55dde307ec95903ec"},
